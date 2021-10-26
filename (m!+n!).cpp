@@ -1,24 +1,35 @@
-﻿#include<stdio.h>
+#include <iostream>
 int main()
 {
-	int n;
-	float p = 1;
-	do
-	{
-		printf("\nNhập vào số n: ");
-		scanf("%d", &n);
-		if (n < 1)
-		{
-			printf("\nSố n phải lớn hơn hoặc bằng 1, vui lòng nhập lại !");
-		}
-	} while (n < 1);
-	//tính biểu thức bằng vòng lặp for
-	for (int i = 1; i <= n; i++) {
-		p = p * i;
-	}
+    int m;
+    float p = 1;
+    std::cout << ("\nNhap vao so m: ");
+    std::cin >> m;
+    if (m < 1)
+    {
+        std::cout << ("\nM phai lon hon 1 !");
+    }
+    while (m < 1);
+    for (int i = 1; i <= m; i++) {
+        p = p * i;
+    }
 
-	printf("\nTích 1 x 2 x ... x %d là: %.1f", n, p);
 
-	printf("\n-----------------------------------------------------\n");
-	printf("Chương trình này được đăng tại Freetuts.net");
+    int n;
+    float q = 1;
+    std::cout << ("\nNhap vao so n: ");
+    std::cin >> n;
+    if (n < 1)
+    {
+        std::cout << ("\nN phai lon hon 1 !");
+    }
+    while (n < 1);
+    for (int i = 1; i <= n; i++)
+    {
+        q = q * i;
+    }
+
+
+    std::cout << "M!+N!=" << p + q << '\n';
 }
+
