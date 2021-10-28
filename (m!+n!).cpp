@@ -3,6 +3,9 @@ int main()
 {
     int m;
     float p = 1;
+    int n;
+    float q = 1;
+
     std::cout << ("\nNhap vao so m: ");
     std::cin >> m;
     if (m < 1)
@@ -14,9 +17,6 @@ int main()
         p = p * i;
     }
 
-
-    int n;
-    float q = 1;
     std::cout << ("\nNhap vao so n: ");
     std::cin >> n;
     if (n < 1)
@@ -28,8 +28,8 @@ int main()
     {
         q = q * i;
     }
+    std::cout << "-----------------------------\n";
+    std::cout << "Tong cua "<< m <<"! va " << n <<"! la " << p + q << '\n';
+    return 0;
 
-
-    std::cout << "M!+N!=" << p + q << '\n';
 }
-
